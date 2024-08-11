@@ -1,0 +1,104 @@
+.cartDrawer {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Off-screen initially */
+  width: 100%; /* Full width on smaller screens */
+  max-width: 400px; /* Limit the width on larger screens */
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: right 0.4s ease;
+  z-index: 1000;
+  border-radius: 0; /* Remove border-radius on smaller screens */
+  border-radius: 8px 0 0 8px; /* Rounded corners on larger screens */
+}
+
+.cartDrawer.open {
+  right: 0; /* Slide in from the right when open */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Hidden state for overlay */
+.overlay.hidden {
+  opacity: 0;
+  display: none;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.clearCartButton {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.clearCartButton:hover {
+  background-color: #c0392b;
+}
+
+.clearCartButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5);
+}
+
+.empty {
+  color: red;
+  font-family: "cairo";
+}
+
+.emptyContainer {
+  align-items: center;
+}
+.emptyContainer img {
+  padding-top: 200px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .cartDrawer {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 8px 0 0 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cartDrawer {
+    width: 30%;
+    max-width: 600px;
+  }
+}

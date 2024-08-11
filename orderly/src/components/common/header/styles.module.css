@@ -1,0 +1,120 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1dd070;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem; /* Space between links */
+  font-family: "Cairo", sans-serif;
+  font-weight: 500;
+}
+
+/* Navigation Link Styles */
+.navLinks a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease; /* color transition */
+}
+
+.navLinks a:hover {
+  color: #1dd070;
+}
+
+.navLinks a.activeLink {
+  color: #1dd070;
+  font-weight: bold;
+}
+
+/* Icon Container */
+.icons {
+  display: flex;
+  gap: 1.5rem; /* Space between icons */
+}
+
+/* Individual Icon Styling */
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* transform transition */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* increase size on hover */
+}
+
+/* Menu Icon for Mobile */
+.iconMenu {
+  display: none; /* Hidden by default */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem; /* smaller logo font */
+    margin-bottom: 1rem; /* Space below logo */
+  }
+
+  .navLinks {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack links vertically */
+    gap: 1rem;
+    width: 100%; /* Full width for mobile */
+    background-color: #000; /* Match header background */
+    padding: 1rem 0;
+  }
+
+  .navLinks.active {
+    display: flex;
+    align-items: flex-start; /* Align links to the left */
+  }
+
+  .iconMenu {
+    display: block; /* Show menu icon on mobile */
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .icons {
+    display: none; /* Hide icons on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .navLinks {
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .iconMenu {
+    font-size: 1.8rem;
+  }
+}

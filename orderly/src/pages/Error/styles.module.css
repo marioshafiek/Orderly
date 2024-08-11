@@ -1,0 +1,48 @@
+.errorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  color: #333;
+}
+
+.content {
+  max-width: 80%;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1dd070;
+  margin-bottom: 1.5rem;
+}
+
+.image {
+  max-width: 90%;
+  height: auto;
+}
+
+.message {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #666;
+  font-weight: bold;
+}
+
+.homeLink {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #e7e9f0;
+  color: #11111c;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.homeLink:hover {
+  background-color: #1dd070;
+  color: white;
+}

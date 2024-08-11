@@ -1,0 +1,46 @@
+.categoryFilter {
+  display: flex;
+  flex-wrap: wrap; /*  wrapping of buttons on smaller screens */
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-family: "Cairo", sans-serif;
+  margin-top: 40px;
+}
+
+.categoryButton {
+  padding: 6px 70px;
+  font-size: 1rem;
+  color: #11111c;
+  background-color: #e7e9f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, padding 0.3s ease,
+    font-weight 0.1s ease;
+}
+
+.categoryButton:hover {
+  background-color: white;
+}
+
+.active {
+  background-color: white;
+  font-weight: 700;
+  padding: 6px 90px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .categoryButton {
+    padding: 6px 40px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .categoryButton {
+    padding: 6px 20px;
+    font-size: 0.8rem;
+  }
+}

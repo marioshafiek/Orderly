@@ -1,0 +1,145 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f7fd;
+  z-index: 1;
+}
+
+.image {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 5%;
+}
+
+.prefix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #666;
+  font-family: "Cairo", sans-serif;
+}
+
+.addToCartButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #1dd070;
+  transition: color 0.3s ease;
+}
+
+.addToCartButton:hover {
+  color: #13153a;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 0;
+}
+
+.info {
+  padding: 1rem;
+  text-align: left;
+  font-family: "Cairo", sans-serif;
+  flex-grow: 1;
+}
+
+/* Card */
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #13153a;
+  margin-bottom: 0.5rem;
+  font-family: "Cairo", sans-serif;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  font-family: "Cairo", sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  text-align: left;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #13153a;
+  font-family: "Cairo", sans-serif;
+}
+
+.learnMore {
+  position: relative;
+  text-decoration: none;
+  color: #13153a;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: "Cairo", sans-serif;
+}
+
+.learnMore::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #1dd070;
+  transition: width 0.3s ease;
+}
+
+.learnMore:hover::after {
+  width: 100%;
+}
+
+.learnMore:hover {
+  color: #1dd070;
+}

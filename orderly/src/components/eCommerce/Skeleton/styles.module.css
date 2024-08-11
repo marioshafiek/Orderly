@@ -1,0 +1,27 @@
+.skeletonCard {
+  width: 280px;
+  height: 430px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.imageSkeleton {
+  width: 100%;
+  height: 180px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.textSkeleton {
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}

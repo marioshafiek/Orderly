@@ -1,0 +1,41 @@
+.addToCartButton {
+  position: relative;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: transform 0.3s ease, fill 0.3s ease;
+  display: inline-flex;
+  padding-top: 2px;
+  background: transparent;
+  border: none;
+}
+
+.addToCartButton svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.addToCartButton:hover svg {
+  transform: scale(1.2);
+  opacity: 70%;
+}
+
+.clicked {
+  animation: clickAnimation 0.3s ease;
+}
+
+/* Animaiton For Button Clicked */
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
