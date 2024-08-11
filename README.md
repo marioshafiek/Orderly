@@ -46,7 +46,7 @@
   - **services/** - Axios global configuration and API services
   - **routes/** - Route configurations and App Router
   - **hooks/** - Custom hooks
-  - **App.tsx** - Main application component
+  - **main.tsx** - Main application component
  
 ## Setup and Installation
 
